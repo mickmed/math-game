@@ -96,9 +96,9 @@ Ideally, a player never wins but just advances to higher levels.
 ### Resetting The Game
 Event listener click for location reload().
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Making Equation with random input boxes | 1 | 3hrs|  |  |
 | Checking for users input | 2 | 3hrs| |  |
@@ -112,7 +112,7 @@ Helper functions should be generic enought that they can be reused in other appl
 
 | Function | Description | 
 | --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string of text | 
+| Random Generator | This will generate random numbers and random deletions| 
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
