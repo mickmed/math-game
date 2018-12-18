@@ -8,26 +8,39 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sep 25th| Project Description | Incomplete
-|Sep 25th| Wireframes / Priority Matrix / Functional Components | Incomplete
-|Sep 26th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Sep 27th| Pseudocode / actual code | Incomplete
-|Sep 28th| Initial Clickable Model  | Incomplete
-|Sep 29th| MVP | Incomplete
-|Sep 30th| Present | Incomplete
+|| Project Description | Incomplete
+|Dec 17th| Wireframes / Priority Matrix / Functional Components | Incomplete
+|Dec 18th| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Dec 18th| Pseudocode / actual code | Incomplete
+|Dec 19th| Initial Clickable Model  | Incomplete
+|Dec 20th| MVP | Incomplete
+|Dec 20th| Quicktime Video
+|Dec 21st| Present | Incomplete
 
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Mick's Math Master. 
+MVP)
+This will be a math learning tool or challenge for elemetary school students. If it goes past MVP there will be advanced levels for adults. The user is presented with a math problem, something simple to start like 3 x 7 = 21. One of the numbers will be randomly generated as blank. The user has to fill in the blank. If they are correct they will score points. If not they will lose points. The user will have a time limit.
+
+POST MVP)
+A splash screen will enable users to start at a chosen level, i.e., easy, intermediate, difficult, and choose differnet operaters, i.e., addition, subtraction, etc, and maybe eventually chose combinations. The idea is for each screen to get more and more difficult. A user can buy a hint and lose points and/or time.
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+https://drive.google.com/drive/u/1/folders/1BMhmPEywxUAq4Zj3P8MI04r0ZFIFX4Pv
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+https://drive.google.com/drive/u/1/folders/1hAJNLpwYaLbaU-FitZIxN9SetLw0nPWZ  
+1)make basic equation
+2)make basic equation with random blank input
+3)check answer
+4)styling, make game user friendly
+4)build points system
+5)build timer
+6)go to next level
 
 ### MVP/PostMVP - 5min
 
@@ -35,36 +48,64 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+MVP)
+1)make basic equation
+2)make basic equation with random blank input
+3)check answer
+4)complete styling
+4)build points system
+5)build timer
+6)go to next level
+
+
 
 #### PostMVP 
 
-- Add user auth
+POST MVP)
+1)splash screen to choose different levels and different operands
+2)advance to more difficult problem
+3)implement different operands
+4)user can buy a hint and loose points
 
 ## Functional Components
+input boxes, buttons to choose levels, event listeners, timer, scoreboard.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
 ### Landing Page
+Landing page will be post MVP.
+1) array of options to choose levels
+2) array of options to choose operands
+3) links to functions that choose options
+3) event listener to move to selected items
+
 
 ### Game Initialization
 
 ### Playing The Game 
+1) Build an array of numbers between one and 12. Array will generate each number before and after the operand. 
+2) Display the equation on screen with .append and use Math.random() to choose one number to be removed.
+3) Use .append to replace the removed number with an input box.
+4) Create answer of equation and match against user answer. Build function that checks equation answer against user input.
+5) Function to inform user of success or failure.
+6) Function to increase score.
+7) Goto next level.
 
 ### Winning The Game
+Ideally, a player never wins but just advances to higher levels.
 
 ### Resetting The Game
+Event listener click for location reload().
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Making Equation with random input boxes | 1 | 3hrs|  |  |
+| Checking for users input | 2 | 3hrs| |  |
+| Styling | 3 | 3hrs|  |  |
+| Adding Second Level with more equations | 4 | 3Hrs | 
+| Adding Splash Screen | 5 | 2hrs |
+| Total | H | 15hrs|  |  |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
