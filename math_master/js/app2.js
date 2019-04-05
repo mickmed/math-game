@@ -8,8 +8,6 @@ let play = () => {
     let answerStored = parseInt(firstStoredNumber) + parseInt(secondStoredNumber);
 
     //create wrapper div
-    
-
     let eqWrapper = document.querySelector('.eq-wrapper');
     let eqWrapperLength = eqWrapper.children.length;
 
@@ -42,9 +40,9 @@ let play = () => {
                 }
             }
         }
-        let checkBtn = document.createElement("button");
-        checkBtn.classList.add("check-btn");
-        document.querySelectorAll(".equation")[eqWrapperLength].appendChild(checkBtn).innerText = "check";
+        let answerBtn = document.createElement("button");
+        answerBtn.classList.add("answerBtn");
+        document.querySelectorAll(".equation")[eqWrapperLength].appendChild(answerBtn).innerText = "check";
         return divObj;
     }
     let divObj = buildEquationDivs(eqWrapper, eqWrapperLength);
@@ -75,7 +73,7 @@ let play = () => {
 
     let checkWin = (removedValue, eqWrapperLength) => {
         //match user input with stored value
-        document.querySelectorAll(".check-btn")[eqWrapperLength].addEventListener("click", function() {
+        document.querySelectorAll(".answerBtn")[eqWrapperLength].addEventListener("click", function() {
 
             let userInput = document.querySelectorAll(".user-input")[eqWrapperLength].value;
             let check = document.createElement('div');
@@ -87,13 +85,12 @@ let play = () => {
             if (parseInt(userInput) === parseInt(removedValue)) {
 
                 document.querySelectorAll(".equation")[eqWrapperLength].appendChild(check).innerHTML = '<i class="far fa-check-square"></i>';
-
+                
             } else {
                 document.querySelectorAll(".equation")[eqWrapperLength].appendChild(check).innerHTML = '<i class="fas fa-skull-crossbones"></i>';
-                console.log(document.querySelectorAll(".equation"));
             }
             //turn off buttons after click
-            document.querySelectorAll(".check-btn")[eqWrapperLength].style.pointerEvents = "none";
+            document.querySelectorAll(".answerBtn")[eqWrapperLength].style.pointerEvents = "none";
 
             //make totals after five equations
             if (eqWrapperLength === 4) {
@@ -138,4 +135,3 @@ let play = () => {
 }
 
 play();
-// play();

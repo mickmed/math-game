@@ -7,30 +7,84 @@
 body{
     background-color: lightblue;
     /* font-family: 'Ubuntu', sans-serif; */
-    font-size:100px;
     margin:20px;
+    background-color:brown;
+    color:yellow;
 }
-.equation-wrapper{
-    display:flex;
+main{
+    /*font-size:100px;*/
+    
 }
 
-.equation-wrapper div{
-    width:100px;
-    padding:20px;
+.eq-wrapper{
+    
 }
-.equation-wrapper div input[type='text']{
-    width:100px;
-    border:1px solid brown;
-    height:100px;
-    margin-top:10px;
-    position: absolute;
-    font-size: 100px;
-    background-color:lightblue;
+
+.equation{
+    text-align:right;
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+.equation div{
+    width:140px;
+    letter-spacing: 4px;
+    /*margin:0px 50px;*/
+    text-align:right;
+    
+    
+    /*padding:20px;*/
+    font-size:80px;
+}
+
+
+.eq-wrapper div input[type='text']{
+    width:140px;
+    border:1px solid black;
+    height:75px;
+   font-size:80px;
+    border-radius:10px;
     text-align: right;
     font-family: Times, serif;
+    background-color:lightyellow;
+    color:brown;
+    text-shadow:1px 1px black;
+    box-shadow:1px 1px black;
+
 }
+
+div.operand, div.equalsSign{
+    text-align:center;
+}
+
+
+.check-btn{
+    background-color:lightblue;
+    width:100px;
+    height:50px;
+    margin-left:50px;
+    font-size:30px;
+    color:brown;
+    /*text-shadow:1px 1px brown;*/
+    border-radius:10px;
+    height:65px;
+    box-shadow:1px 1px black;
+}
+
 
 .message{
     font-family: 'Ubuntu', sans-serif;
     font-size:100px;
 }
+
+.check{
+    color:yellow;
+
+}
+
+
+
+
+
+
